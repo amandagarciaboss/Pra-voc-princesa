@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Rilary 💖 - Nossos 7 Dias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 50%, #ffc0cb 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .romantic-font {
+            font-family: 'Dancing Script', cursive;
+        }
+        .heart-bg {
+            position: absolute;
+            pointer-events: none;
+            animation: floatUp 4s linear infinite;
+            opacity: 0.7;
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+            100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 182, 193, 0.4);
+        }
+    </style>
+</head>
+<body class="relative text-gray-800 flex flex-col min-h-screen">
+
+    <div id="hearts-container" class="fixed inset-0 overflow-hidden pointer-events-none z-0"></div>
+
+    <header class="relative z-10 text-center py-12 px-4">
+        <h1 class="romantic-font text-5xl md:text-7xl text-rose-600 drop-shadow-sm mb-2">Para Rilary 💖</h1>
+        <p class="text-rose-700/80 font-medium text-lg md:text-xl">7 dias que mudaram completamente os meus dias...</p>
+    </header>
+
+    <main class="relative z-10 flex-grow max-w-4xl mx-auto px-4 w-full pb-16 space-y-12">
+        
+        <!-- Contador e Introdução -->
+        <section class="glass-card rounded-3xl p-6 md:p-10 shadow-xl text-center transform transition duration-500 hover:scale-[1.01]">
+            <div class="inline-block bg-rose-100 text-rose-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-4 shadow-inner">
+                <i class="fa-solid fa-calendar-days mr-2"></i> 14 de Outubro a 21 de Outubro
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Parece pouco tempo, mas...</h2>
+            <p class="text-gray-600 leading-relaxed text-base md:text-lg mb-6">
+                Começamos a nos falar dia 14 e hoje é dia 21. São apenas 7 dias, mas juro para você que parecem meses de tanta intensidade, carinho e sorrisos bobos que você me causa todos os dias. Cada mensagem sua ilumina meu dia inteiro!
+            </p>
+            <div class="grid grid-cols-3 gap-4 max-w-md mx-auto bg-rose-50/80 p-4 rounded-2xl border border-rose-200">
+                <div>
+                    <span id="days-count" class="block text-2xl md:text-3xl font-bold text-rose-600">7</span>
+                    <span class="text-xs text-rose-500 uppercase tracking-wider font-semibold">Dias</span>
+                </div>
+                <div>
+                    <span id="smiles-count" class="block text-2xl md:text-3xl font-bold text-rose-600">1000+</span>
+                    <span class="text-xs text-rose-500 uppercase tracking-wider font-semibold">Sorrisos</span>
+                </div>
+                <div>
+                    <span id="feelings-count" class="block text-2xl md:text-3xl font-bold text-rose-600">Infinito</span>
+                    <span class="text-xs text-rose-500 uppercase tracking-wider font-semibold">Carinho</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Declaração Detalhada -->
+        <section class="glass-card rounded-3xl p-6 md:p-10 shadow-xl">
+            <h3 class="romantic-font text-3xl md:text-4xl text-rose-600 mb-6 text-center">O que você despertou em mim...</h3>
+            <div class="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+                <p>
+                    Rilary, eu não sei exatamente o que o destino estava planejando, mas colocar você no meu caminho no dia 14 foi a melhor coisa que aconteceu na minha semana. 
+                </p>
+                <p>
+                    Mesmo em pouquíssimo tempo, percebi o quanto você é especial, incrível, divertida e dona de um jeito que me encanta cada vez mais. É impressionante como alguém consegue se tornar tão importante em tão poucos dias.
+                </p>
+                <p class="font-medium text-rose-700 bg-rose-50 p-4 rounded-xl border-l-4 border-rose-500">
+                    "Você não é apenas uma pessoa com quem converso; você é o melhor momento do meu dia, a notificação que eu mais espero e o motivo de eu sorrir pra tela do celular."
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção de Brincadeiras e Interação -->
+        <section class="glass-card rounded-3xl p-6 md:p-10 shadow-xl text-center">
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Momento Interativo 🎮</h3>
+            <p class="text-gray-600 mb-6">Vamos ver o quanto você me conhece ou o que o futuro nos reserva?</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Jogo 1: O que você acha de mim? -->
+                <div class="bg-white/80 p-6 rounded-2xl shadow-sm border border-rose-100 flex flex-col justify-between">
+                    <div>
+                        <div class="text-rose-500 text-3xl mb-3"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h4 class="font-bold text-lg mb-2 text-gray-800">Nível da nossa sintonia</h4>
+                        <p id="compatibility-text" class="text-gray-600 text-sm mb-4">Clique no botão para descobrir a nossa porcentagem de match nesses 7 dias!</p>
+                    </div>
+                    <button onclick="calculateCompatibility()" class="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white font-medium py-3 rounded-xl shadow-md hover:from-rose-600 hover:to-pink-600 transition active:scale-95">
+                        Testar Sintonia 💘
+                    </button>
+                </div>
+
+                <!-- Jogo 2: Motivos para sorrir -->
+                <div class="bg-white/80 p-6 rounded-2xl shadow-sm border border-rose-100 flex flex-col justify-between">
+                    <div>
+                        <div class="text-rose-500 text-3xl mb-3"><i class="fa-solid fa-gift"></i></div>
+                        <h4 class="font-bold text-lg mb-2 text-gray-800">Sorteador de Elogios</h4>
+                        <p id="compliment-text" class="text-gray-600 text-sm mb-4">Clique para ver algo que eu amo em você (ou no nosso papo).</p>
+                    </div>
+                    <button onclick="getRandomCompliment()" class="w-full bg-gradient-to-r from-pink-500 to-rose-400 text-white font-medium py-3 rounded-xl shadow-md hover:from-pink-600 hover:to-rose-500 transition active:scale-95">
+                        Ver Elogio ✨
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Surpresa Final -->
+        <section class="glass-card rounded-3xl p-6 md:p-10 shadow-xl text-center border-2 border-rose-300 bg-gradient-to-b from-white/90 to-rose-50/90">
+            <h3 class="romantic-font text-4xl md:text-5xl text-rose-600 mb-4">Uma Surpresa para a Rilary 💌</h3>
+            <p class="text-gray-600 mb-6 max-w-lg mx-auto">
+                Preparada para o que eu quero te dizer olhando nos seus olhos (ou por áudio)? Clique no botão abaixo para abrir a chave do meu coração.
+            </p>
+            <div id="surp-container">
+                <button onclick="revealSurprise()" id="surp-btn" class="bg-rose-600 hover:bg-rose-700 text-white font-bold px-8 py-4 rounded-full shadow-lg transform hover:-translate-y-1 transition text-lg flex items-center justify-center mx-auto space-x-2">
+                    <i class="fa-solid fa-lock-open"></i> <span>Abrir Surpresa Secreta</span>
+                </button>
+            </div>
+            <div id="surp-content" class="hidden mt-6 p-6 bg-white rounded-2xl shadow-inner border border-rose-200 animate-fade-in">
+                <h4 class="text-xl font-bold text-rose-600 mb-3">Minha promessa para você 🌹</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    Rilary, esses 7 dias foram só o começo. Eu quero continuar conversando, rindo das mesmas bobagens, conhecendo mais sobre você e criando memórias lindas juntos. Obrigado por aparecer na minha vida e deixar tudo mais leve e feliz. Aceita continuar construindo essa história comigo? 💖
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="relative z-10 text-center py-6 text-rose-600/80 text-sm font-medium">
+        Feito com todo o meu carinho para a Rilary • 14/10 a 21/10 e para todo sempre ✨
+    </footer>
+
+    <script>
+        // Gerador de corações flutuantes no fundo
+        function createHeart() {
+            const container = document.getElementById('hearts-container');
+            const heart = document.createElement('div');
+            heart.classList.add('heart-bg');
+            heart.innerHTML = '<i class="fa-solid fa-heart text-rose-400"></i>';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+            container.appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }
+        setInterval(createHeart, 500);
+
+        // Lista de elogios e curiosidades
+        const compliments = [
+        "Seu sorriso tem o poder de alegrar qualquer um dos meus dias instantaneamente!",
+        "A forma como nossas conversas fluem fácil é algo raro e muito especial.",
+        "Você tem um jeito encantador que me faz ficar pensando em você o dia todo.",
+        "Cada mensagem sua é um motivo para eu abrir um sorriso bobo aqui sozinho.",
+        "Mesmo em apenas 7 dias, você já se tornou a parte favorita do meu dia!",
+        "Sua energia e sua alegria são simplesmente contagiantes."
+        ];
+
+        function getRandomCompliment() {
+            const textElement = document.getElementById('compliment-text');
+            const randomComp = compliments[Math.floor(Math.random() * compliments.length)];
+            textElement.style.opacity = 0;
+            setTimeout(() => {
+                textElement.textContent = randomComp;
+                textElement.style.opacity = 1;
+            }, 200);
+        }
+
+        function calculateCompatibility() {
+            const textElement = document.getElementById('compatibility-text');
+            // Como em 7 dias já é intenso, o match é 100% garantido!
+            textElement.innerHTML = "🔥 <strong>100% de Match!</strong> A sintonia entre a gente em apenas 7 dias é absurda e inexplicável de tão boa!";
+            textElement.classList.add('text-rose-600', 'font-medium');
+        }
+
+        function revealSurprise() {
+            const btn = document.getElementById('surp-btn');
+            const content = document.getElementById('surp-content');
+            btn.style.display = 'none';
+            content.classList.remove('hidden');
+            
+            // Cria chuva de corações comemorativa
+            for(let i=0; i<30; i++) {
+                setTimeout(createHeart, i * 50);
+            }
+        }
+    </script>
+</body>
+</html>
